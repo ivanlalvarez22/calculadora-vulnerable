@@ -1,0 +1,5 @@
+alert("XSS");
+document.body.style.backgroundColor = 'red';
+window.location.href = "https://www.mercadolibre.com.ar";
+var a="JS_ENCODED_UNTRUSTED_DATA";alert(a);
+alert("Your query string was ' + unescape(document.location.search) + '");
